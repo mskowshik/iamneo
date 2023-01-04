@@ -1,0 +1,173 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/36ad692a76.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-4">
+                <nav class="navbar navbar-expand-lg navbar-light bg-white">
+                    <a class="navbar-brand fixed-top" href="#"></a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon "></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav">
+                            <li class="nav-item mt-3 text-bold">
+                                <a class="nav-link" href="#"> <i class="fa-solid fa-lightbulb"></i><span class="pl-4 text-dark"> Notes</span></a>
+
+                                <a class="nav-link" onclick="display('sectionremainder')" href="#"><i class="fa-regular fa-bell"></i><span class="pl-4 text-dark">Remainders</span></a>
+
+                                <a class="nav-link" href="#"><i class="fa-solid fa-pen"></i><span class="pl-4 text-dark">Edit lables</span></a>
+                                <a class="nav-link" href="#"><i class="fa-solid fa-download"></i><span class="pl-4 text-dark">Archive</span></a>
+                                <a class="nav-link" href="#"><i class="fa-regular fa-trash-can"></i><span class="pl-4 text-dark">Trash</span></a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+            <div class="col-md-5 mt-3">
+                <nav class="navbar navbar-light bg-light search-length">
+                    <form class="form-inline">
+                        <div class="input-group">
+                            <div class="input-group-prepend">
+                                <span class="border-w input-group-text search-bar-bg" id="basic-addon1"><i class=" fa-solid fa-magnifying-glass"></i></span>
+                            </div>
+                            <input type="text" class=" form-control border-w search-bar-bg" placeholder="Search" aria-label="Username" aria-describedby="basic-addon1">
+                        </div>
+                    </form>
+                </nav>
+
+            </div>
+            <div class="col-md-3 mt-4">
+                <i class="icon-size fa-solid fa-arrow-rotate-right"></i>
+                <i class="icon-size fa-solid fa-gear pl-4"></i>
+                <i class="icon-size fa-solid fa-ellipsis pl-4"></i>
+                <i class="icon-size fa-regular fa-circle-user pl-4"></i>
+            </div>
+        </div>
+    </div>
+
+    <div id="sectionremainder">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="borderw1">
+                        <nav class="navbar navbar-light bg-light justify-content-center">
+                            <form class="form-inline">
+                                <input class="size form-control mr-sm-2 border-w" type="search" placeholder="Take a note..." aria-label="Search">
+                            </form>
+                            <i class="icon-size fa-regular fa-square-check mr-4"></i>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="44" height="40" fill="currentColor" class="bi bi-brush mr-3" viewBox="0 0 16 16">
+                                <path d="M15.825.12a.5.5 0 0 1 .132.584c-1.53 3.43-4.743 8.17-7.095 10.64a6.067 6.067 0 0 1-2.373 1.534c-.018.227-.06.538-.16.868-.201.659-.667 1.479-1.708 1.74a8.118 8.118 0 0 1-3.078.132 3.659 3.659 0 0 1-.562-.135 1.382 1.382 0 0 1-.466-.247.714.714 0 0 1-.204-.288.622.622 0 0 1 .004-.443c.095-.245.316-.38.461-.452.394-.197.625-.453.867-.826.095-.144.184-.297.287-.472l.117-.198c.151-.255.326-.54.546-.848.528-.739 1.201-.925 1.746-.896.126.007.243.025.348.048.062-.172.142-.38.238-.608.261-.619.658-1.419 1.187-2.069 2.176-2.67 6.18-6.206 9.117-8.104a.5.5 0 0 1 .596.04zM4.705 11.912a1.23 1.23 0 0 0-.419-.1c-.246-.013-.573.05-.879.479-.197.275-.355.532-.5.777l-.105.177c-.106.181-.213.362-.32.528a3.39 3.39 0 0 1-.76.861c.69.112 1.736.111 2.657-.12.559-.139.843-.569.993-1.06a3.122 3.122 0 0 0 .126-.75l-.793-.792zm1.44.026c.12-.04.277-.1.458-.183a5.068 5.068 0 0 0 1.535-1.1c1.9-1.996 4.412-5.57 6.052-8.631-2.59 1.927-5.566 4.66-7.302 6.792-.442.543-.795 1.243-1.042 1.826-.121.288-.214.54-.275.72v.001l.575.575zm-4.973 3.04.007-.005a.031.031 0 0 1-.007.004zm3.582-3.043.002.001h-.002z" />
+                            </svg>
+                            <i class="icon-size fa-regular fa-image"></i>
+                        </nav>
+                    </div>
+                </div>
+                <div class=" mt-5">
+                    <div class="card-container d-flex flex-row">
+                        <div class="col-3 col-md-5  card shadow-lg d-flex flex-column justify-content-end pl-4">
+                            <div class="">
+                                <div class="d-flex flex-row justify-content-between">
+                                    <img class="google-img mt-3 " src="https://allthatsinteresting.com/wordpress/wp-content/uploads/2018/02/google.png" />
+                                    <i class="icon-size1 fa-solid fa-thumbtack mt-4 pr-5"></i>
+                                </div>
+                                <h3 class="mt-3 mb-4">Create your Google Account</h3>
+                                <div class="d-flex flex-row justify-content-between">
+                                    <div>
+                                        <input type="text" placeholder="First Name" size="20px" class="mr-3" required>
+                                        <input type="text" placeholder="Last Name" size="20px" required><br><br>
+                                        <input type="text" placeholder="email" size="30px" required>
+                                        <p class="mt-2">uppercase letters & numbers & prefix</p>
+                                        <a href="#">
+                                            <p>use any numbers email address</p>
+                                        </a><br>
+                                        <input type="text" placeholder="Password" size="20px" class="mr-3" required>
+                                        <input type="text" placeholder="Confirm" size="20px" required><br><br>
+                                        <p class="para">use Uppercase,lowercase Alphabets,numbers & symbols</p>
+                                        <input type="checkbox" class="checkbox-size mt-2" />
+                                        <label class="para">Show Password</label><br>
+                                    </div>
+                                    <img class="img1" src="https://cdn.dribbble.com/users/129991/screenshots/4399126/01.png" />
+                                </div>
+                                <div class="d-flex flex-row justify-content-start">
+                                    <a href="" class="para mt-3 mr-5">
+                                        <p>Sign in instead</P>
+                                    </a>
+                                    <button class="btn-primary nextbutton mt-3 ml-5">Next</button>
+                                </div>
+                                <h4 class="mt-3">Need to take a note</h4>
+                            </div>
+                            <div class="bg mt-3 card-para mb-5 mt-4 mr-4">
+                                <i class="icon-size fa-regular fa-clock mt-3 ml-3"></i><span class="pl-3 schedule-time">Tommorow,8:00 AM</span>
+                            </div>
+                            <div class="d-flex flex-row mb-4">
+                                <i class="icon-size fa-regular fa-bell pr-5"></i>
+                                <i class="icon-size fa-solid fa-user-plus"></i>
+                                <i class="icon-size fa-solid fa-palette pl-5"></i>
+                                <i class="icon-size fa-regular fa-image pl-5"></i>
+                                <a href="#sectionsmcard1"><i class="icon-size fa-solid fa-ellipsis-vertical pl-5 icon-color" onclick="display('sectionsmcard1')"></i> </a>
+                            </div>
+                        </div>
+                        <div class="col-3 col-md-3 card1 shadow-lg d-flex flex-column justify-content-end pl-4">
+                            <div class="bg mt-3 card-para mb-5 mt-5">
+                                <i class="icon-size fa-regular fa-clock mt-3 ml-3"></i><span class="pl-3 schedule-time">Tommorow,8:00 AM</span>
+                            </div>
+                        </div>
+                        <div class="col-3 card col-md-3 shadow-lg d-flex flex-column justify-content-start pl-4">
+                            <h1 class="mt-3 mb-3">10th Aug</h1>
+                            <div class="checkbox-font">
+                                <input type="checkbox" class="checkbox-size" />
+                                <label>Wake up early</label><br>
+                                <input type="checkbox" class="checkbox-size" />
+                                <label>Exercise</label><br>
+                                <input type="checkbox" class="checkbox-size" />
+                                <label>Go to office</label><br>
+                                <input type="checkbox" class="checkbox-size" />
+                                <label>Code,Deploy and redo</label><br>
+                                <input type="checkbox" class="checkbox-size" />
+                                <label>Finish job</label><br>
+                                <input type="checkbox" class="checkbox-size" />
+                                <label>Have a nice walk</label><br>
+                                <input type="checkbox" class="checkbox-size" />
+                                <label>Take a nap</label>
+                            </div>
+                            <div class="bg card-para mb-5 mt-4 mr-3">
+                                <i class="icon-size fa-regular fa-clock mt-3 ml-3"></i><span class="pl-3 schedule-time">Tommorow,8:00 AM</span>
+                            </div>
+                        </div>
+                        <div class="col-3 card col-md-3 shadow-lg d-flex flex-column justify-content-start pl-4 mr-5">
+                            <h1 class="mt-3">Exercise</h1>
+                            <div class="bg mt-5 card-para mb-5">
+                                <i class="icon-size fa-regular fa-clock mt-3 ml-3"></i><span class="pl-3 schedule-time">Tommorow,8:00 AM</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="sectionsmcard1" class="mt-5 pt-3 col-4">
+        <div class="card shadow-lg mt-3 mb-3">
+            <ul class="list-style mt-3 mb-4">
+                <li class="pl-3 pt-3">Delete note</li>
+                <li class="pl-3 pt-3">Add label</li>
+                <li class="pl-3 pt-3">Add drawing</li>
+                <li class="pl-3 pt-3">Make a copy</li>
+                <li class="pl-3 pt-3">Show checkboxes</li>
+                <li class="pl-3 pt-3">Grab image text</li>
+                <li class="pl-3 pt-3">Copy to Google Docs</li>
+            </ul>
+        </div>
+    </div>
+    <script type="text/javascript" src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/js/ccbp-ui-kit.js"></script>
+</body>
+
+</html>
